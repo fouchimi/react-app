@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.mainContainer {
+    margin: auto;
+    padding: 20px;
+    width: 40%;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.bookContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    border: 1px solid black;
+    width: 420px;
+}
+
+.book-card {
+    width: 420px;
+    margin: 20px;
+}
