@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {
+  withRouter,
+  Redirect
+} from "react-router-dom";
 
 import { InputGroup, InputGroupAddon, Input, Button, Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
 
@@ -39,36 +43,51 @@ const Book = props => {
   );
 }
 
+export class Bookshelves extends Component {
+  render() {
+    return (
+      <div>
+        <span>Bookshelves Component</span>
+      </div>
+    )
+  }
+}
 
 class App extends Component {
-  constructor(){
+  constructor() {
     super();
     this.state = {
       bookName: "",
-      items: []
+      items: [],
     }
   }
 
-  updateInput(event){
+  updateInput(event) {
     this.setState({
       bookName: event.target.value,
     })
   }
 
   addBook(book) {
-      console.log(book);
-      /*fetch(localhostURL + '/bookshelves', {
-        method: 'POST',
-        headers: { 'content-type': 'application/json' },
-        body: book
-      }).then(response => console.log(response.json()))
-      .catch(err => console.error(err)); */
+    book = JSON.stringify(book);
+    fetch(localhostURL + '/bookshelves', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: book
+    }).then(() => {
+      //reset state
+      this.setState({
+        bookName: "",
+        items: [],
+        isLoadingBookShelves: true
+      });
+      this.props.history.push('/bookshelves');
+    }).catch(err => console.error(err));
   }
 
   fetchBooks() {
     this.state.bookName = this.state.bookName.trim().replace(/ /g, '+');
     const url = baseURL + '/volumes' + '?q=' + this.state.bookName + '&apiKey=' + apiKey;
-
     this._fetchBooks(url)
       .then(response => {
         console.log(response);
@@ -90,24 +109,28 @@ class App extends Component {
     } catch (err) {
       console.error(err);
     }
-  }	
+  }
 
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to my bookstore</h1>
-        </header>
-        <SearchBar 
-          onChanged = {(event) => this.updateInput(event)}
-          onSearched={() => this.fetchBooks()} />
-        <div className="list">
-          {this.state.items.map((book, index) => <Book book={book} key={index} onAddBook={() => { console.log(book); this.addBook(book) } } />)}
-        </div>    
+        { !this.state.isLoadingBookShelves && 
+            <div>
+              <header className="App-header">
+                <img src={logo} className="App-logo" alt="logo" />
+                <h1 className="App-title">Welcome to my bookstore</h1>
+              </header>
+              <SearchBar
+                onChanged={(event) => this.updateInput(event)}
+                onSearched={() => this.fetchBooks()} />
+              <div className="list">
+                {this.state.items.map((book, index) => <Book book={book} key={index} onAddBook={() => this.addBook(book)} />)}
+              </div>
+            </div>
+        }
       </div>
     );
   }
 }
 
-export default App;
+export default withRouter(App);
