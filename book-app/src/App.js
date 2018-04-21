@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { BookService } from './services/BookService';
 
 import { InputGroup, InputGroupAddon, Input, Button, Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
 
@@ -58,12 +57,12 @@ class App extends Component {
 
   addBook(book) {
       console.log(book);
-      fetch(localhostURL + '/bookshelves', {
+      /*fetch(localhostURL + '/bookshelves', {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
         body: book
       }).then(response => console.log(response.json()))
-      .catch(err => console.error(err));
+      .catch(err => console.error(err)); */
   }
 
   fetchBooks() {
@@ -72,13 +71,14 @@ class App extends Component {
 
     this._fetchBooks(url)
       .then(response => {
+        console.log(response);
         response.items.forEach(item => {
           item.volumeInfo.title = item.volumeInfo.title.substr(0, 30);
           item.volumeInfo.description = item.volumeInfo.description.substr(0, 120);
           this.setState({
             items: response.items,
           })
-        });
+        }); 
       });
   }
 
@@ -103,7 +103,7 @@ class App extends Component {
           onChanged = {(event) => this.updateInput(event)}
           onSearched={() => this.fetchBooks()} />
         <div className="list">
-          {this.state.items.map((book, index) => <Book book={book} key={index} onAddBook={() => this.addBook(book) } />)}
+          {this.state.items.map((book, index) => <Book book={book} key={index} onAddBook={() => { console.log(book); this.addBook(book) } } />)}
         </div>    
       </div>
     );
