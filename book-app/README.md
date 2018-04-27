@@ -3,7 +3,7 @@
 Install **json-server** by running the command **npm install -g json-server**.
 Then navigate to the root of the application and run **npm install**.
 Run **npm start** to launch the application. 
-Then navigate to the folder **react-app/book-app/src/server.js** and run the command **node server.js** to start the server.
+Next navigate to the folder **react-app/book-app/src/** and run the command **node server.js** to start the server.
 
 
 ## Test the application 
