@@ -24,6 +24,7 @@ server.post('/bookshelves', (req, res, next) => {
     const jsonObj = JSON.stringify(obj);
     console.log('Updating db.json');
     fs.writeFile('db.json', jsonObj, 'utf8', function (err) {
+        console.log(jsonObj);
         if (err) {
             console.error(err);
             return res.status(500).json(err);
@@ -36,7 +37,6 @@ server.post('/bookshelves', (req, res, next) => {
 });
 
 server.delete('/bookshelves/:bookId', (req, res, next) => {
-    res.jsonp(req.body);
     console.log('Book with ' + req.body + ' has been deleted successfully');
     next();
 });

@@ -1,0 +1,250 @@
+{
+  "bookshelves": [
+    {
+      "kind": "books#volume",
+      "id": "02Y7DAAAQBAJ",
+      "etag": "QqwvFpplYYI",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/02Y7DAAAQBAJ",
+      "volumeInfo": {
+        "title": "Beyond Timbuktu",
+        "authors": [
+          "Ousmane Oumar Kane"
+        ],
+        "publisher": "Harvard University Press",
+        "publishedDate": "2016-06-07",
+        "description": "Timbuktu is famous as a center of learning from Islam’s Golden Age. Yet it was one among many schola",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780674969353"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0674969359"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 294,
+        "printType": "BOOK",
+        "categories": [
+          "History"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.1.1.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=02Y7DAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=02Y7DAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=02Y7DAAAQBAJ&printsec=frontcover&dq=Ousmane&hl=&cd=6&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=02Y7DAAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://market.android.com/details?id=book-02Y7DAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 39.95,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 31.16,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=02Y7DAAAQBAJ&rdid=book-02Y7DAAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 39950000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 31160000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Beyond_Timbuktu-sample-epub.acsm?id=02Y7DAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Beyond_Timbuktu-sample-pdf.acsm?id=02Y7DAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=02Y7DAAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Ousmane Kane charts the rise of Muslim learning in West Africa from the beginning of Islam to the present day and corrects lingering misconceptions about Africa’s Muslim heritage and its influence."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "DKcWE3WXoj8C",
+      "etag": "82ZLXmflBNk",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/DKcWE3WXoj8C",
+      "volumeInfo": {
+        "title": "Harry Potter and International",
+        "authors": [
+          "Daniel H. Nexon",
+          "Iver B. Neumann"
+        ],
+        "publisher": "Rowman & Littlefield",
+        "publishedDate": "2006-01-01",
+        "description": "Drawing on a range of historical and sociological sources, this work shows how aspects of Harry's wo",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0742539598"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780742539594"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 245,
+        "printType": "BOOK",
+        "categories": [
+          "Literary Criticism"
+        ],
+        "averageRating": 4,
+        "ratingsCount": 7,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=DKcWE3WXoj8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=DKcWE3WXoj8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=DKcWE3WXoj8C&printsec=frontcover&dq=Harry+Potter&hl=&cd=7&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=DKcWE3WXoj8C&dq=Harry+Potter&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Harry_Potter_and_International_Relations.html?hl=&id=DKcWE3WXoj8C"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Harry_Potter_and_International_Relations-sample-pdf.acsm?id=DKcWE3WXoj8C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=DKcWE3WXoj8C&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Drawing on a range of historical and sociological sources, this work shows how aspects of Harry&#39;s world contain aspects of our own."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "39iYWTb6n6cC",
+      "etag": "srd+vXKC5AM",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/39iYWTb6n6cC",
+      "volumeInfo": {
+        "title": "Harry Potter and the Philosoph",
+        "authors": [
+          "J.K. Rowling"
+        ],
+        "publisher": "Pottermore",
+        "publishedDate": "2015-12-08",
+        "description": "\"Turning the envelope over, his hand trembling, Harry saw a purple wax seal bearing a coat of arms; ",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781781100219"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1781100217"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 353,
+        "printType": "BOOK",
+        "categories": [
+          "Juvenile Fiction"
+        ],
+        "averageRating": 4.5,
+        "ratingsCount": 1637,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.16.15.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=39iYWTb6n6cC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=39iYWTb6n6cC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=39iYWTb6n6cC&dq=Harry+Potter&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=39iYWTb6n6cC&dq=Harry+Potter&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Harry_Potter_and_the_Philosopher_s_Stone.html?hl=&id=39iYWTb6n6cC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=39iYWTb6n6cC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "An incredible adventure is about to begin! Pottermore has now launched the Wizarding World Book Club. Visit Pottermore to sign up and join weekly Twitter discussions at WW Book Club."
+      }
+    }
+  ]
+}
